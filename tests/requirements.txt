@@ -1,0 +1,11 @@
+numpy==1.22.3
+requests==2.27.1
+Flask==2.1.1
+Flask-Cors==3.0.10
+flasgger==0.9.5
+Flask-HTTPAuth==4.5.0
+rsa==4.8
+msgpack==1.0.3
+numpy==1.22.3
+pycrypto==2.6.1
+pdoc3==0.10.0

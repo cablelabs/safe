@@ -1,0 +1,19 @@
+{
+  "controller": "http://controller:8088",
+  "weighted": false,
+  "features": 1,
+  "key_size": 512,
+  "groups": 1,
+  "ag_type": "SAFE",
+  "should_encrypt": true,
+  "should_debug": true,
+  "aggregation_timeout": 10,
+  "poll_time": 0.01,
+  "predicted_rate": 2.1,
+  "slowdown_factor": 1.65,
+  "chunk_size": 50,
+  "estimate_progress": false,
+  "basic_auth": false,
+  "namespace": "global",
+  "namespace_password": "dummy"
+}

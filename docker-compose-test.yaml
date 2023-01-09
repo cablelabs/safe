@@ -1,0 +1,15 @@
+version: "2.1"
+
+services:
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    image: test
+    container_name: safe-test
+    environment:
+      - PROGRESS_TIMEOUT=5
+      - AGGREGATION_TIMEOUT=10
+      - SHOULD_DEBUG=yes
+      - POLL_TIME=10
+      - YIELD_TIME=0.005

@@ -1,0 +1,34 @@
+version: "2.1"
+
+services:
+  controller:
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    image: controller
+    container_name: safe-controller
+    environment:
+      - PROGRESS_TIMEOUT=5
+      - AGGREGATION_TIMEOUT=10
+      - SHOULD_DEBUG=yes
+      - POLL_TIME=10
+      - YIELD_TIME=0.005
+      - AUTH_ENABLED=${AUTH_ENABLED:-no}
+    expose:
+      - 8088
+    ports:
+      - "8088:8088"
+    volumes:
+      - ./config/:/config
+  aggregator:
+    build:
+      context: .
+      dockerfile: Dockerfile.aggregator
+    image: aggregator
+    container_name: safe-aggregator
+    expose:
+      - 9099
+    ports:
+      - "9099:9099"
+    volumes:
+      - ./config/:/config
