@@ -138,3 +138,8 @@ with the syntax:
 ```
 AGGREGATION_METHOD EXPECTED_VALUE VALUE_1 VALUE_2 ... VALUE_N
 ```
+
+## Use Cases
+
+*  Web survey system [SPoKE](https://github.com/cablelabs/spoke). 
+
