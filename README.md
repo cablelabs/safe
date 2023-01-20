@@ -1,6 +1,6 @@
 # SAFE: Secure Aggregation with Failover and Encryption
 
-This respository contains a proof-of-concept implementation
+This repository contains a proof-of-concept implementation
 of the [SAFE](https://arxiv.org/abs/2108.05475) algorithm. For comparison, the repository also contains implementations of the original [Practical Secure Aggregation](https://dl.acm.org/doi/10.1145/3133956.3133982) algorithm,
 developed by Google, as well as federated aggregation without protection.
 
@@ -16,8 +16,8 @@ Secure Aggregation allows parameters contributed by local learners to be kept co
 (not shared with a central controller or other learners) while still making progress on
 the optimization by computing averages over the confidential values.
 
-The original algorithm scales quadrtically in the number of learners whereas our SAFE
-algorithm scales linearly and is more resurce efficient and easier to implement on constrained
+The original algorithm scales quadratically in the number of learners whereas our SAFE
+algorithm scales linearly and is more resource efficient and easier to implement on constrained
 devices such as network equipment.
 
 ## Getting Started
@@ -96,8 +96,8 @@ The following variables may be set:
 
 | Variable | Description | Default |
 | --- | --- | --- |
-| `PROGRESS_TIMEOUT` | progress timout (seconds) when client will be skipped | 5 |
-| `AGGREGATION_TIMEOUT` | aggregation timout (seconds) when aggregation wil be restarted | 10 |
+| `PROGRESS_TIMEOUT` | progress timeout (seconds) when client will be skipped | 5 |
+| `AGGREGATION_TIMEOUT` | aggregation timeout (seconds) when aggregation wil be restarted | 10 |
 | `SHOULD_DEBUG` | debug logs | yes |
 | `POLL_TIME` | internal long poll max wait for values (seconds) | 10 |
 | `YIELD_TIME` | time to wait between checking for values in long poll (seconds) | 0.005 |
@@ -125,7 +125,7 @@ basic authentication header containing the credentials to gain access.
 Swagger REST API documentation for the controller can be explored when the controller is running on:
 [http://localhost:8088/apidocs/](http://localhost:8088/apidocs/).
 
-Client PyDoc API can be expored when the controller is running on:
+Client PyDoc API can be explored when the controller is running on:
 [http://localhost:9099/aggregation/](http://localhost:9099/aggregation/).
 
 ## Tests
